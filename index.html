@@ -192,7 +192,7 @@
 
 /* ---- 이력 페이지: 위 시맨틱 토큰만 써요 ---- */
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg-page); color: var(--fg-primary); font: var(--t6); -webkit-font-smoothing: antialiased; }
+body { margin: 0; background: var(--bg-page); color: var(--fg-primary); font: var(--t6); -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: break-word; }  /* 한글은 띄어쓰기에서만 줄바꿈 */
 a { color: var(--fg-link); text-underline-offset: 3px; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--stroke-focus); outline-offset: 2px; border-radius: 6px; }
 h1, h2, h3, p { margin: 0; }
@@ -218,7 +218,7 @@ section { display: grid; gap: var(--sp-5); padding-top: var(--sp-16); }
 .hero h1 { font: 700 44px/1.15 var(--font-head); letter-spacing: -0.025em; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
 .hero h1 small { font: var(--t4); color: var(--fg-secondary); letter-spacing: 0; }
 .hero .lead { font: 700 24px/1.45 var(--font-head); letter-spacing: -0.015em; max-width: 26ch; text-wrap: balance; }
-.hero .lead b { color: var(--fg-brand); }
+.hero .lead b { color: var(--fg-brand); white-space: nowrap; }
 .hero .desc { color: var(--fg-secondary); max-width: 58ch; }
 .cta { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
 .btn { display: inline-flex; align-items: center; gap: 6px; height: 44px; padding: 0 var(--sp-5); border-radius: var(--r-md); font: var(--t7); font-weight: 600; text-decoration: none; border: 1px solid transparent; }
